@@ -12,6 +12,12 @@ $task_bg_color: #feb5b5;
   box-sizing: border-box;
 }
 
+html {
+  // for preventing content shifts by the scrollbar
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
 body {
   color: $text_color;
   font-family: "Montserrat", sans-serif;
